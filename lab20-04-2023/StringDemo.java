@@ -1,7 +1,9 @@
-public class  {
+package lab;
+
+public class StringDemo {
     public static void main(String[] args) {
         String originalString = "Welcome to Java World";
-
+        
         // Returns the character at 5th position and display it
         char characterAt5thPosition = originalString.charAt(4);
         System.out.println("Character at 5th position: " + characterAt5thPosition);
@@ -33,7 +35,7 @@ public class  {
         System.out.println("Replaced String: " + replacedString);
         
        System.out.println("---------------------------------------");
-//Returns string between 4th position and 10th position and display it
+        //Returns string between 4th position and 10th position and display it
         String substring = originalString.substring(3, 10);
         System.out.println("Substring between 4th and 10th position: " + substring);
         
@@ -45,3 +47,4 @@ public class  {
         System.out.println("Lowercase String: " + lowercaseString);
     }
 }
+

@@ -1,10 +1,13 @@
-public class StringBuffer {
+package lab;
+
+public class StringBufferDemo{
     public static void main(String[] args) {
+    	
         // Create a StringBuffer with the initial string
-        StringBuffer sb = new StringBuffer("This is StringBuffer");
+        StringBuffer sb = new StringBuffer("This is String Buffer");
 
         // 1. Append a string to the existing string
-        sb.append("- Anudip Foundation");
+        sb.append(": Anudip Foundation");
         System.out.println("1. Appended string: " + sb.toString());
         
         System.out.println(".......................................... ");
@@ -24,11 +27,9 @@ public class StringBuffer {
 
 
         // 4. Replace a word in the string
-        int index = sb.indexOf("Buffer");
-        sb.replace(index, index + "Buffer".length(), "Builder");
-        System.out.println("4. Replaced string: " + sb.toString());
-        
-        System.out.println(".......................................... ");
+        StringBuffer sb1 = new StringBuffer("This is String Buffer ");
+		sb1.replace(11, 20, "Builder");
+		System.out.println("4. Replaced string : " + sb1);
 
     }
 }
